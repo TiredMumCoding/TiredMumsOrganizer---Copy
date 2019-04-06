@@ -1,0 +1,28 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+    <script src="Script.js"></script>
+       <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form class="form1" id="form1" runat="server">
+     <div class="TitleBar"><div class="TitleBarCentered">
+         <asp:LinkButton ID="adminlink" class="adminbtn" runat="server" Text="" OnClick="admin_page" />
+     <asp:LinkButton id="titlelink" class="titlebtn" runat="server" Text="login" OnClick="Login_Logout" />
+         <asp:Label id="titlelab" CssClass="titlelabel" runat="server" Text="" />
+                           </div></div>
+    <h1 class="title" id="title">Tired Mum's Organizer</h1>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
